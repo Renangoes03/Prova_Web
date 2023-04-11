@@ -6,37 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./conversor.component.css']
 })
 export class ConversorComponent {
-  graus: number = 0;
-  radianos: number = 0;
-
-  metros: number = 0;
-  pes: number = 0;
-
-  polegadas: number = 0;
-  centimetros: number = 0;
-
+  dolar: number = 0;
+  real: number = 0;
 
   converterParaRadianos(): void {
-    this.radianos = this.graus * Math.PI / 180;
+    this.dolar = this.real * 5.72 ;
   }
 
   converterParaGraus() {
-    this.graus = this.radianos * 180 / Math.PI;
+    this.real = this.dolar * 1;
   }
 
-  converterParaPes() {
-    this.pes = this.metros * 3.28084;
-  }
-
-  converterParaMetros() {
-    this.metros = this.pes / 3.28084;
-  }
-  
-  converterParaCentimetros() {
-    this.centimetros = this.polegadas * 2.54;
-  }
-
-  converterParaPolegadas() {
-    this.polegadas = this.centimetros / 2.54;
-  }
 }
