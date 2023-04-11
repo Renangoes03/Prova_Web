@@ -4,12 +4,12 @@
 	<br>
 
 	<p>
-		<a class="btn btn-primary" data-bs-toggle="collapse" href="#GrausxRadiano" role="button" aria-expanded="false"
+		<a class="btn btn-primary" data-bs-toggle="collapse" href="#dolar" role="button" aria-expanded="false"
 			aria-controls="collapseExample">
 			Dolar
 		</a>
 	</p>
-	<div class="collapse" id="GrausxRadiano">
+	<div class="collapse" id="dolar">
 		<div class="card card-body"><br>
 			<h2>Conversor de Dolar</h2>
 			<label>
@@ -25,32 +25,59 @@
 				<button (click)="converterParaDolar()">Real</button>
 			</label>
 			<p>{{ real }} real = {{ dolar }} dolar</p>
+        </div>
+    </div>
 
             <p>
-                <a class="btn btn-primary" data-bs-toggle="collapse" href="#GrausxRadiano" role="button" aria-expanded="false"
+                <a class="btn btn-primary" data-bs-toggle="collapse" href="#euro" role="button" aria-expanded="false"
                     aria-controls="collapseExample">
-                    Dolar
+                    Euro
                 </a>
             </p>
-            <div class="collapse" id="GrausxRadiano">
+            <div class="collapse" id="euro">
                 <div class="card card-body"><br>
-                    <h2>Conversor de Dolar</h2>
+                    <h2>Conversor de Euro</h2>
                     <label>
-                        Dolar:
-                        <input type="number" name="graus" [(ngModel)]="dolar">
-                        <button (click)="converterParaReal()">Dolar</button>
+                        Peso:
+                        <input type="number" name="graus" [(ngModel)]="peso">
+                        <button (click)="converterParaEuro()">Peso</button>
                     </label>
-                    <p>{{ dolar }} dolar = {{ real }} real</p>
+                    <p>{{ peso }} peso = {{ euro }} euro</p>
         
                     <label>
-                        Real:
-                        <input type="number" name="radianos" [(ngModel)]="real">
-                        <button (click)="converterParaDolar()">Real</button>
+                        Euro:
+                        <input type="number" name="radianos" [(ngModel)]="euro">
+                        <button (click)="converterParaEuro()">Euro</button>
                     </label>
-                    <p>{{ real }} real = {{ dolar }} dolar</p>
+                    <p>{{ euro }} euro = {{ peso }} peso</p>
         
                 </div>
 
 		</div>
-	</div>
+
+        <p>
+            <a class="btn btn-primary" data-bs-toggle="collapse" href="#afegao" role="button" aria-expanded="false"
+                aria-controls="collapseExample">
+                Afegão
+            </a>
+        </p>
+        <div class="collapse" id="afegao">
+            <div class="card card-body"><br>
+                <h2>Conversor de Afegão</h2>
+                <label>
+                    Afegão:
+                    <input type="number" name="graus" [(ngModel)]="afegao">
+                    <button (click)="converterParaEuro()">Afegao</button>
+                </label>
+                <p>{{ afegao }} afegao = {{ ariay }} ariay</p>
+    
+                <label>
+                    Ariay:
+                    <input type="number" name="radianos" [(ngModel)]="ariay">
+                    <button (click)="converterParaEuro()">Euro</button>
+                </label>
+                <p>{{ ariay }} ariay = {{ afegao }} afegao</p>
+    
+        </div>
+    </div>
 </div>
