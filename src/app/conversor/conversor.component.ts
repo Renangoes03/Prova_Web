@@ -8,13 +8,13 @@ import { Component } from '@angular/core';
 export class ConversorComponent {
   dolar: number = 0;
   real: number = 0;
-
-  converterParaRadianos(): void {
-    this.dolar = this.real * 5.72 ;
+  
+  converterParaReal(): void {
+    this.dolar = this.real *  5.72 ;
   }
 
-  converterParaGraus() {
-    this.real = this.dolar * 1;
+  converterParaDolar() {
+    this.real = this.dolar *  0.20;
   }
 
 }

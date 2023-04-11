@@ -11,20 +11,45 @@
 	</p>
 	<div class="collapse" id="GrausxRadiano">
 		<div class="card card-body"><br>
-			<h2>Conversor de unidades</h2>
+			<h2>Conversor de Dolar</h2>
 			<label>
-				Graus:
+				Dolar:
 				<input type="number" name="graus" [(ngModel)]="dolar">
-				<button (click)="converterParaRadianos()">Dolar</button>
+				<button (click)="converterParaReal()">Dolar</button>
 			</label>
 			<p>{{ dolar }} dolar = {{ real }} real</p>
 
 			<label>
-				Radio:
+				Real:
 				<input type="number" name="radianos" [(ngModel)]="real">
-				<button (click)="converterParaGraus()">Radius</button>
+				<button (click)="converterParaDolar()">Real</button>
 			</label>
 			<p>{{ real }} real = {{ dolar }} dolar</p>
+
+            <p>
+                <a class="btn btn-primary" data-bs-toggle="collapse" href="#GrausxRadiano" role="button" aria-expanded="false"
+                    aria-controls="collapseExample">
+                    Dolar
+                </a>
+            </p>
+            <div class="collapse" id="GrausxRadiano">
+                <div class="card card-body"><br>
+                    <h2>Conversor de Dolar</h2>
+                    <label>
+                        Dolar:
+                        <input type="number" name="graus" [(ngModel)]="dolar">
+                        <button (click)="converterParaReal()">Dolar</button>
+                    </label>
+                    <p>{{ dolar }} dolar = {{ real }} real</p>
+        
+                    <label>
+                        Real:
+                        <input type="number" name="radianos" [(ngModel)]="real">
+                        <button (click)="converterParaDolar()">Real</button>
+                    </label>
+                    <p>{{ real }} real = {{ dolar }} dolar</p>
+        
+                </div>
 
 		</div>
 	</div>
