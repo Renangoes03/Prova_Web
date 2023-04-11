@@ -15,6 +15,7 @@ export class ConversorComponent {
 
   converterParaReal(): void {
     this.dolar = this.real *  0.20;
+    this.real = this.dolar /  5.03;
   }
   converterParaDolar() {
     this.real = this.dolar *  5.03;
