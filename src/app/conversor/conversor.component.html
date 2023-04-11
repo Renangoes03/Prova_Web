@@ -13,16 +13,16 @@
 		<div class="card card-body"><br>
 			<h2>Conversor de Dolar</h2>
 			<label>
-				Dolar:
+				Real:
 				<input type="number" name="graus" [(ngModel)]="dolar">
-				<button (click)="converterParaReal()">Dolar</button>
+				<button class="btn btn-success" (click)="converterParaReal()">Dolar</button>
 			</label>
 			<p>{{ dolar }} dolar = {{ real }} real</p>
 
 			<label>
-				Real:
+				Dolar:
 				<input type="number" name="radianos" [(ngModel)]="real">
-				<button (click)="converterParaDolar()">Real</button>
+				<button class="btn btn-success" (click)="converterParaDolar()">Real</button>
 			</label>
 			<p>{{ real }} real = {{ dolar }} dolar</p>
         </div>
@@ -40,14 +40,14 @@
                     <label>
                         Peso:
                         <input type="number" name="graus" [(ngModel)]="peso">
-                        <button (click)="converterParaEuro()">Peso</button>
+                        <button class="btn btn-success" (click)="converterParaPeso()">Peso</button>
                     </label>
                     <p>{{ peso }} peso = {{ euro }} euro</p>
         
                     <label>
                         Euro:
                         <input type="number" name="radianos" [(ngModel)]="euro">
-                        <button (click)="converterParaEuro()">Euro</button>
+                        <button class="btn btn-success" (click)="converterParaEuro()">Euro</button>
                     </label>
                     <p>{{ euro }} euro = {{ peso }} peso</p>
         
@@ -67,14 +67,14 @@
                 <label>
                     Afegão:
                     <input type="number" name="graus" [(ngModel)]="afegao">
-                    <button (click)="converterParaEuro()">Afegao</button>
+                    <button class="btn btn-success" (click)="converterParaAfegao()">Afegao</button>
                 </label>
                 <p>{{ afegao }} afegao = {{ ariay }} ariay</p>
     
                 <label>
                     Ariay:
                     <input type="number" name="radianos" [(ngModel)]="ariay">
-                    <button (click)="converterParaEuro()">Euro</button>
+                    <button class="btn btn-success" (click)="converterParaAriay()">Euro</button>
                 </label>
                 <p>{{ ariay }} ariay = {{ afegao }} afegao</p>
     
