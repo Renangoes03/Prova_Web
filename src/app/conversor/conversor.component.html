@@ -39,14 +39,14 @@
                     <h2>Conversor de Euro</h2>
                     <label>
                         Peso:
-                        <input type="number" name="graus" [(ngModel)]="peso">
+                        <input type="number" name="peso" [(ngModel)]="peso">
                         <button class="btn btn-success" (click)="converterParaPeso()">Peso</button>
                     </label>
                     <p>{{ peso }} peso = {{ euro }} euro</p>
         
                     <label>
                         Euro:
-                        <input type="number" name="radianos" [(ngModel)]="euro">
+                        <input type="number" name="euro" [(ngModel)]="euro">
                         <button class="btn btn-success" (click)="converterParaEuro()">Euro</button>
                     </label>
                     <p>{{ euro }} euro = {{ peso }} peso</p>
