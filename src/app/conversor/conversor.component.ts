@@ -6,12 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./conversor.component.css']
 })
 export class ConversorComponent {
-  dolar: number = 0;
-  real: number = 0;
-  euro: number = 0;
-  peso: number = 0;
-  afegao: number = 0;
-  ariay:  number = 0;
+  dolar: number = 5.03;
+  real: number = 0.20;
+  euro: number = 5.46;
+  peso: number = 0.023;
+  afegao: number = 0.058;
+  ariay:  number = 0.011;
 
   converterParaReal(): void {
     this.dolar = this.real *  0.20;
@@ -23,14 +23,18 @@ export class ConversorComponent {
 
   converterParaEuro(): void {
     this.peso = this.euro *  5.46 ;
+    this.peso = this.euro /  5.46 ;
   }
   converterParaPeso(): void {
-    this.euro = this.peso *  0.23 ;
+    this.euro = this.peso *  0.023 ;
+    this.euro = this.peso /  0.023 ;
   } 
   converterParaAfegao(): void {
-    this.ariay = this.afegao *  1 ;
+    this.ariay = this.afegao * 0.058 ;
+    this.ariay = this.afegao / 0.058 ;
   } 
   converterParaAriay(): void {
-    this.afegao = this.ariay *  50.43 ;
+    this.afegao = this.ariay *  0.0011 ;
+    this.afegao = this.ariay /  0.0011 ;
   }
 }
