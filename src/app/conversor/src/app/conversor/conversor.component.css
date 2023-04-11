@@ -1,0 +1,33 @@
+.container{
+  background-color: whitesmoke;
+  font-size: larger;
+  text-align: center;
+  margin-top: 250px;
+  width: 550px;
+  height: 700px;
+}
+.body{
+  background-color: black;
+  font-size: larger;
+  text-align: center;
+  margin-top: 250px;
+  width: 550px;
+}
+button{
+  height: px;
+  width: 120px;
+}
+input{
+  width: 180px;
+}
+a{
+  height: 55px;
+  width: 160px;
+  text-align: center;
+  margin-top: 1px;
+}
+h1{
+  margin-top: auto;
+  animation-duration: 1s infinite;
+  margin: 15px;
+}
